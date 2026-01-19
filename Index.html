@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculator</title>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+     <div class="bg-white w-80 rounded-2xl shadow-xl p-5">
+
+    
+    <input
+    type="text"
+    id="display"
+     class="w-full bg-gray-900 focus:outline-none text-white text-right text-3xl p-4 rounded-lg mb-4"
+      
+    />
+
+    
+    <div class="grid grid-cols-4 gap-3">
+
+      <!-- Row 1 -->
+      <button onclick="clearDisplay()" class="bg-pink-500 text-white py-4 rounded-lg text-lg font-semibold hover:bg-pink-600">
+        C
+      </button>
+      <button  onclick="input('/')"  class="bg-gray-200 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300">
+        /
+      </button>
+      <button  onclick="input('*')"  class="bg-gray-200 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300">
+        *
+      </button>
+      <button  onclick="input('-')" class="bg-gray-200 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300">
+        -
+      </button>
+
+      <!-- Row 2 -->
+      <button  onclick="input(7)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        7
+      </button>
+      <button onclick="input(8)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        8
+      </button>
+      <button  onclick="input(9)" class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        9
+      </button>
+      <button onclick="input('+')"  class="bg-gray-200 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300">
+        +
+      </button>
+
+      <!-- Row 3 -->
+      <button onclick="input(4)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        4
+      </button>
+      <button onclick="input(5)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        5
+      </button>
+      <button onclick="input(6)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        6
+      </button>
+      <button onclick="Result()" class="bg-blue-500 text-white row-span-2 rounded-lg text-lg font-semibold hover:bg-blue-600">
+        =
+      </button>
+
+      <!-- Row 4 -->
+      <button  onclick="input(1)" class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        1
+      </button>
+      <button onclick="input(2)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        2
+      </button>
+      <button onclick="input(3)"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        3
+      </button>
+      <button  onclick="input(0)" class="bg-gray-100 col-span-2 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        0
+      </button>
+      <button onclick="input('.')"  class="bg-gray-100 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200">
+        .
+      </button>
+      <button id="backspace"  class="bg-pink-500 py-5 rounded-lg text-lg font-semibold hover:bg-pink-800">
+        x
+      </button>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
