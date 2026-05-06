@@ -11,9 +11,11 @@ function Result(){
 function clearDisplay() {
     document.getElementById("display").value = "";
     
-    
-
 }
 
+function removeNumber() {
+    let display = document.getElementById("display");
+    display.value = display.value.slice(0,-1);
+}
 
 
